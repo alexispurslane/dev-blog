@@ -1,0 +1,25 @@
+# dune build --profile release
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/alexispurslane/.cache/dune/db
+# Workspace root: /home/alexispurslane/Development/dev-blog/code/domainslibtest
+# Auto-detected concurrency: 20
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/alexispurslane/Development/dev-blog/code/domainslibtest/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /home/alexispurslane/.opam/default/bin/ocamlc.opt -config > /tmp/dune_14f83b_output
+$ (cd _build/default && /home/alexispurslane/.opam/default/bin/ocamlopt.opt -w -40 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /home/alexispurslane/.opam/default/lib/domain-local-await -I /home/alexispurslane/.opam/default/lib/domain_shims -I /home/alexispurslane/.opam/default/lib/domainslib -I /home/alexispurslane/.opam/default/lib/ocaml/threads -I /home/alexispurslane/.opam/default/lib/ocaml/unix -I /home/alexispurslane/.opam/default/lib/saturn -I /home/alexispurslane/.opam/default/lib/saturn_lockfree -I /home/alexispurslane/.opam/default/lib/thread-table -I lib/.domainslibtest.objs/byte -I lib/.domainslibtest.objs/native -intf-suffix .ml -no-alias-deps -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /home/alexispurslane/.opam/default/bin/ocamlopt.opt -w -40 -g -o bin/main.exe lib/domainslibtest.cmxa /home/alexispurslane/.opam/default/lib/ocaml/unix/unix.cmxa /home/alexispurslane/.opam/default/lib/ocaml/threads/threads.cmxa /home/alexispurslane/.opam/default/lib/domain_shims/domain_shims.cmxa /home/alexispurslane/.opam/default/lib/saturn_lockfree/lockfree.cmxa /home/alexispurslane/.opam/default/lib/saturn/saturn.cmxa /home/alexispurslane/.opam/default/lib/thread-table/Thread_table.cmxa /home/alexispurslane/.opam/default/lib/domain-local-await/Domain_local_await.cmxa /home/alexispurslane/.opam/default/lib/domainslib/domainslib.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

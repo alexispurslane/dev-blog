@@ -1,0 +1,6 @@
+branches:
+  only:
+    - main
+
+install:
+  - bundle

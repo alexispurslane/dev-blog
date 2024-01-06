@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+I give this blog three days to live.
