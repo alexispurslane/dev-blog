@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/domainslibtest/META"
-  "_build/install/default/lib/domainslibtest/dune-package"
-  "_build/install/default/lib/domainslibtest/opam"
-]
-bin: [
-  "_build/install/default/bin/domainslibtest"
-]
